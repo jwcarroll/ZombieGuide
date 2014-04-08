@@ -1,0 +1,24 @@
+﻿div[ng-view].ng-enter {
+    -webkit-animation: fadeInRight 0.5s;
+    animation: fadeInRight 0.5s;
+}
+
+.animate-repeat.ng-leave {
+  -webkit-animation:rollOut 0.5s;
+  animation:rollOut 0.5s;
+}
+
+.animate-repeat.ng-move {
+  -webkit-animation:fadeInRight 0.5s;
+  animation:fadeInRight 0.5s;
+}
+
+.animate-if.ng-enter {
+  -webkit-animation:fadeIn 0.5s;
+  animation:fadeIn 0.5s;
+}
+
+.animate-if.ng-leave {
+  -webkit-animation:fadeOut 0.5s;
+  animation:fadeOut 0.5s;
+}

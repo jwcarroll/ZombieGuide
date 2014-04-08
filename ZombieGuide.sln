@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30324.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZombieGuide", "ZombieGuide\ZombieGuide.csproj", "{FE259DB0-C1B2-4DB7-AD10-4CD90AC12F49}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{7F35636E-1038-4A62-99B8-E77E98663289}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebAppPublishModule.psm1 = PublishScripts\AzureWebAppPublishModule.psm1
+		PublishScripts\Publish-WebApplication.ps1 = PublishScripts\Publish-WebApplication.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{1FE09C31-27BE-43D7-81F2-4B586F1BDC37}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\ZombieGuide-WAWS-dev.json = PublishScripts\Configurations\ZombieGuide-WAWS-dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE259DB0-C1B2-4DB7-AD10-4CD90AC12F49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE259DB0-C1B2-4DB7-AD10-4CD90AC12F49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE259DB0-C1B2-4DB7-AD10-4CD90AC12F49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE259DB0-C1B2-4DB7-AD10-4CD90AC12F49}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1FE09C31-27BE-43D7-81F2-4B586F1BDC37} = {7F35636E-1038-4A62-99B8-E77E98663289}
+	EndGlobalSection
+EndGlobal
