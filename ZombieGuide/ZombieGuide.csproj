@@ -483,6 +483,7 @@
     <Content Include="Views\Zombie\Detail.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="Scripts\app\controllers\zombieDetailCtrl.ts" />
     <TypeScriptCompile Include="Scripts\app\controllers\zombieListCtrl.ts" />
     <TypeScriptCompile Include="Scripts\app\modules\applicationModule.ts" />
     <TypeScriptCompile Include="Scripts\app\services\zombieService.ts" />
