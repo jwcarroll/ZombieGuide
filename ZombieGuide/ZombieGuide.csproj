@@ -481,6 +481,7 @@
     <Content Include="Scripts\version.json" />
     <Content Include="Views\Zombie\List.cshtml" />
     <Content Include="Views\Zombie\Detail.cshtml" />
+    <Content Include="Views\Home\Welcome.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\app\controllers\zombieDetailCtrl.ts" />

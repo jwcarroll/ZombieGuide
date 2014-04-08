@@ -30,4 +30,4 @@
     }
 
     Application.Module.controller('ZombieListController', ZombieListController);
-} 
+}

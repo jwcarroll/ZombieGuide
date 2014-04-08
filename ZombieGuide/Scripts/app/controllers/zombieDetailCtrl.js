@@ -1,7 +1,8 @@
 ﻿var Controllers;
 (function (Controllers) {
     var ZombieDetailController = (function () {
-        function ZombieDetailController($location, zombieService) {
+        function ZombieDetailController($routeParams, $location, zombieService) {
+            this.$routeParams = $routeParams;
             this.$location = $location;
             this.zombieService = zombieService;
             this.init();
@@ -12,7 +13,15 @@
                 _this.imageNames = names;
             });
 
-            this.zombie = {};
+            var id = parseInt(this.$routeParams.id, 10);
+
+            if (isNaN(id)) {
+                this.zombie = {};
+            } else {
+                this.zombieService.getZombie(id).success(function (z) {
+                    _this.zombie = z;
+                });
+            }
         };
 
         ZombieDetailController.prototype.save = function () {
@@ -23,9 +32,13 @@
         };
 
         ZombieDetailController.prototype.saveCurrentZombie = function () {
-            return this.zombieService.createZombie(this.zombie);
+            if (angular.isDefined(this.zombie.id)) {
+                return this.zombieService.updateZombie(this.zombie);
+            } else {
+                return this.zombieService.createZombie(this.zombie);
+            }
         };
-        ZombieDetailController.$inject = ['$location', 'zombieService'];
+        ZombieDetailController.$inject = ['$routeParams', '$location', 'zombieService'];
         return ZombieDetailController;
     })();
 
