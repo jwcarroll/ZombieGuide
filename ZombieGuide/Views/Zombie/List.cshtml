@@ -1,21 +1,13 @@
 ﻿<div class="row">
-    <div class="col-sm-6 animate-if" ng-if="ctrl.zombies.length === 0">
-        <h1>No Zombies In Your List!</h1>
-    </div>
-    <div class="col-sm-6 col-md-4 animate-repeat" ng-repeat="zombie in ctrl.zombies">
+    <div class="col-sm-6 col-md-4 animate-repeat">
         <div class="thumbnail bg-warning">
-            <img ng-src="/content/zombies/{{zombie.imageName || 'generic-zombie.jpg'}}">
+            <img src="/content/zombies/generic-zombie.jpg">
             <div class="caption">
-                <h2>{{zombie.name}}</h2>
-                <p>{{zombie.notes}}</p>
-                <ul class="list-inline">
-                    <li class="label label-danger" ng-repeat="tag in zombie.tags">
-                        {{tag}}
-                    </li>
-                </ul>
+                <h2>Name</h2>
+                <p>Notes</p>
                 <p>
-                    <a href="#/zombies/{{zombie.id}}" class="btn btn-lg btn-primary" role="button">Edit</a>
-                    <a href="" class="btn btn-lg btn-danger" role="button" ng-click="ctrl.deleteZombie(zombie)">Delete</a>
+                    <a href="#" class="btn btn-lg btn-primary" role="button">Edit</a>
+                    <a href="#" class="btn btn-lg btn-danger" role="button">Delete</a>
                 </p>
             </div>
         </div>

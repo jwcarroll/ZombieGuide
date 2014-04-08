@@ -122,11 +122,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Scripts\app\controllers\" />
     <Folder Include="Scripts\app\directives\" />
+    <Folder Include="Scripts\app\modules\" />
+    <Folder Include="Scripts\app\services\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Api\ZombieImageController.cs" />
-    <Compile Include="Api\ZombiesController.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -480,14 +481,9 @@
     <Content Include="Scripts\jquery-2.1.0.min.map" />
     <Content Include="Scripts\version.json" />
     <Content Include="Views\Zombie\List.cshtml" />
-    <Content Include="Views\Home\Welcome.cshtml" />
     <Content Include="Views\Zombie\Detail.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="Scripts\app\controllers\zombieDetailCtrl.ts" />
-    <TypeScriptCompile Include="Scripts\app\controllers\zombieListCtrl.ts" />
-    <TypeScriptCompile Include="Scripts\app\modules\applicationModule.ts" />
-    <TypeScriptCompile Include="Scripts\app\services\zombieService.ts" />
     <TypeScriptCompile Include="Scripts\TypeDefs\angular\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\TypeDefs\angular\angular-cookies.d.ts" />
     <TypeScriptCompile Include="Scripts\TypeDefs\angular\angular-mocks.d.ts" />
