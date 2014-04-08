@@ -11,12 +11,12 @@ namespace ZombieGuide.Controllers
         // GET: Zombie
         public ActionResult List()
         {
-            return PartialView();
+            return View();
         }
 
         public ActionResult Detail()
         {
-            return PartialView();
+            return View();
         }
     }
 }
