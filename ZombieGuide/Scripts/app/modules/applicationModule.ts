@@ -1,5 +1,5 @@
 ﻿module Application {
-    var app: ng.IModule = angular.module('zombie-guide', ['ngRoute']);
+    var app: ng.IModule = angular.module('zombie-guide', ['ngRoute', 'ngAnimate']);
 
     app.config(['$routeProvider', ($routeProvider: ng.route.IRouteProvider) => {
         $routeProvider

@@ -1,6 +1,6 @@
 ﻿var Application;
 (function (Application) {
-    var app = angular.module('zombie-guide', ['ngRoute']);
+    var app = angular.module('zombie-guide', ['ngRoute', 'ngAnimate']);
 
     app.config([
         '$routeProvider', function ($routeProvider) {
