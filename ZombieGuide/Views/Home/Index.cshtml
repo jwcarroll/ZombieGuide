@@ -14,21 +14,5 @@
     </div>
 </div>
 @section scripts{
-    <script type="text/javascript">
-        $.ajax('/api/zombies', {
-            type: 'GET'
-        }).success(function (data) {
-            alert(JSON.stringify(data, null, '\t'));
-        });
-
-        //$.ajax('/api/zombies', {
-        //    type: 'POST',
-        //    data: {
-        //        name: 'Josh is dead',
-        //        notes: 'Please put him out of his misery'
-        //    }
-        //}).success(function (data) {
-        //    alert(JSON.stringify(data, null, '\t'));
-        //});
-    </script>
+    <script src="~/Scripts/app/services/zombiesService.js"></script>
 }

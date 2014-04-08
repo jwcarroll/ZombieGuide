@@ -125,7 +125,6 @@
     <Folder Include="Scripts\app\controllers\" />
     <Folder Include="Scripts\app\directives\" />
     <Folder Include="Scripts\app\modules\" />
-    <Folder Include="Scripts\app\services\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Api\ZombieImageController.cs" />
@@ -486,6 +485,7 @@
     <Content Include="Views\Zombie\Detail.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="Scripts\app\services\zombiesService.ts" />
     <TypeScriptCompile Include="Scripts\TypeDefs\angular\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\TypeDefs\angular\angular-cookies.d.ts" />
     <TypeScriptCompile Include="Scripts\TypeDefs\angular\angular-mocks.d.ts" />
